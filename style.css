@@ -1,0 +1,142 @@
+.directNav {
+    width: auto;
+    height: auto;
+    padding: 2px;
+    /* border: solid blue 3px; */
+    text-align: center;
+    
+    /* justify-content: space-evenly; */
+}
+/* .navigation {
+    
+    justify-content: space-around;
+} */
+/* .whole-Container {
+    display: flex;
+    width: 100%;
+    height: 800%;
+    background-color: orchid;
+} */
+.main-Picture {
+    width: 1345px;
+    height: 718px;
+/* width: 100%;
+height: 300px; */
+background-color: lightblue;
+}
+.Jp1 {
+    background-image: url("images/jamaicaPlain1.jpg");
+    width: 1077px;
+    height: 718px;
+}
+
+.bottom-Container {
+    display: flex;
+    justify-content: space-around;
+    /* justify-items: center; */
+    /* align-items: center; */
+    width: 100%;
+    height: 300%;
+    background-color: lightblue;
+    padding: 15px;
+    /* border: solid black 5px; */
+}
+
+
+/* .pictue-One {
+width: 25%;
+height: 60%;
+background-color: darkred;
+padding: 100px;
+} */
+
+/* .obamaRoxbury2 {
+    background-image: url(/images/obamaRoxbury2.jpg);
+} */
+
+/* .pictue-Two {
+    width: 25%;
+    height: 60%;
+    background-color: green;
+    padding: 100px;
+
+} */
+
+/* .pictue-Three {
+    width: 25%;
+    height: 60%;
+    background-color: chocolate;
+    padding: 100px;
+
+} */
+
+.main-Container {
+    display: block;
+    width: auto;
+    height: auto;
+}
+.contacts-input {
+    
+}
+
+.full-div {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: beige;
+}
+/* .right-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 50%;
+    background-color: lightblue;
+    
+} */
+
+.Gallery-main-Container{
+background-color: white;
+display: flex;
+border: 10px;
+justify-content: center;
+}
+
+.pictureOne{
+    /* background-image: url(/images/roxbury1.jpg); */
+    width: 300px;
+    height: 200px;
+}
+/* .pic1 {
+    background-image: url"(/images/roxbury1.jpg)";
+    width: 300px;
+    height: 200px;
+
+} */
+
+.pictureTwo{
+    height: 50%;
+    width: 100%;
+    background-image: url(/images/roxbury3.jpg);
+}
+
+.main-about-Container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.right-Container{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    flex-direction: column;
+    /* align-self: center; */
+    width: 50%;
+    height: 50%;
+    padding-top: 30px;
+}
+
+.left-Container{
+    flex-direction: column;
+    width: 50%;
+    height: 50%;
+}
