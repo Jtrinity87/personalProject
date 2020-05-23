@@ -57,17 +57,6 @@ border: 10px;
 justify-content: center;
 }
 
-.pictureOne{
-    width: 300px;
-    height: 200px;
-}
-
-.pictureTwo{
-    height: 50%;
-    width: 100%;
-    background-image: url(/images/roxbury3.jpg);
-}
-
 .main-about-Container{
     display: flex;
     flex-direction: column;
@@ -86,4 +75,17 @@ justify-content: center;
     flex-direction: column;
     width: 50%;
     height: 50%;
+}
+
+.Gallery {
+    margin: 10px 50px;
+}
+.Gallery img {
+    transition: 1s;
+    padding: 15px;
+    width: 200px;
+}
+.Gallery img:hover {
+    filter: opacity(100%);
+    transform: scale(1.1);
 }
