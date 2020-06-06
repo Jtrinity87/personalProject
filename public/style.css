@@ -2,6 +2,7 @@ body{
     background-color: lightblue;
 }
 .directNav {
+    /* justify-items: center; */
     justify-content: center;
     width: auto;
     height: auto;
@@ -34,6 +35,7 @@ body{
 .bottom-Container {
     display: flex;
     justify-content: space-around;
+    /* text-align: center; */
     width: 100%;
     height: 300%;
     background-color: lightblue;

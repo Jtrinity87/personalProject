@@ -8,7 +8,6 @@ const path = require('path');
 app.set('view engine', 'ejs');
 
 
-
 //look at Unit 19 day 4
 app.use(body_parser.json());
 app.use(body_parser.urlencoded({ extended: true }));
