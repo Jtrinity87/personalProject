@@ -1,0 +1,15 @@
+<%- include("../partials/head") %>
+<h1>Fill out the form below to add to the database:</h1>
+
+
+  <form action="/createPage" method="POST">
+    <label for="artName">Name of Art:</label>
+    <input type="text" id="artName" name="artName">
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address">
+    <label for="link">Google Map Link:</label>
+    <input type="text" id="link" name="link">
+    </select>
+    <input type="submit" value="Save" />
+    <span><a href="/allDetails">View all Details</a></span>
+  </form>

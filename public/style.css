@@ -1,6 +1,13 @@
-body{
+.lightBlue {
     background-color: lightblue;
 }
+.lightSalmon {
+    background-color: lightsalmon;
+}
+
+/* body{
+    background-color: lightblue;
+} */
 .directNav {
     /* justify-items: center; */
     justify-content: center;
@@ -98,4 +105,9 @@ justify-content: center;
 .Gallery img:hover {
     filter: opacity(100%);
     transform: scale(1.1);
+}
+
+#content {
+    display: none;
+    /* display: block; */
 }

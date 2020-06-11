@@ -1,28 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Gallery</title>
-</head>
-<style>
-    body {
-        background-color: lightblue;
-    }
-</style>
-<body>
-    <div class="navigation">
-        <a id="active" href="index.ejs">Home</a>
-        <a href="commentsUploads.ejs">Comments/Uploads</a>
-        <a href="contactPage.ejs">Contact</a>
-        <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
-    </div>
-    <div class="directNav">
-        <a href="aboutPage.ejs">About</a>
-        <a href="galleryPage.ejs">Gallery</a>
-        <a href="mapPage.ejs">Map</a>
-    </div>
+<%- include("../partials/head") %>
+<div class="lightBlue">
     <div class="jumbotron jumbotron-fluid" style="background-color: lightsalmon">
         <div class="container">
           <h1 class="display-4">Gallery</h1>
@@ -31,23 +8,44 @@
           </div>
     <h1><center>Gallery</center></h1>
     <div class="Gallery">
-        <a href="images/jamaicaPlain1.jpg"><img src="images/jamaicaPlain1.jpg"</a>
-        <a href="images/jamaicaPlain2.jpg"><img src="images/jamaicaPlain2.jpg"</a>
-        <a href="images/jamaicaPlain3.jpg"><img src="images/jamaicaPlain3.jpg"</a>
-        <a href="images/BreatheLifeRoxbury1.jpg"><img src="images/BreatheLifeRoxbury1.jpg"</a>
-        <a href="images/popCooper.jpg"><img src="images/popCooper.jpg"</a>
-        <a href="images/FacesOfRoxbury.jpg"><img src="images/FacesOfRoxbury.jpg"</a>
-        <a href="images/roxbury6.jpeg"><img src="images/roxbury6.jpeg"</a>
-        <a href="images/obamaPowerbox1.jpg"><img src="images/obamaPowerbox1.jpg"</a>
-        <a href="images/owlPowerbox2.jpeg"><img src="images/owlPowerbox2.jpeg"</a>
-        <a href="images/CeliaCruz2.jpeg"><img src="images/CeliaCruz2.jpeg"</a>
-        <a href="images/stonyBrookreservation.jpg"><img src="images/stonyBrookreservation.jpg"</a>
-        <a href="images/McDonough.jpg"><img src="images/McDonough.jpg"</a>
-        <a href="images/NelsonMandelaRoxbury.jpg"><img src="images/NelsonMandelaRoxbury.jpg"</a>
-        <a href="images/MelKingRoxbury2.jpg"><img src="images/MelKingRoxbury2.jpg"</a>
-        <a href="images/beePowerbox3.jpg"><img src="images/beePowerbox3.jpg"</a>
-        <a href="images/roxbury4.jpg"><img src="images/roxbury4.jpg"</a>
+        <div class="picture">
+        <a href="images/jamaicaPlain1.jpg"><img src="images/jamaicaPlain1.jpg"></a>
+        <button id="btn">Info</button>
+    <div id="content"><p><% for(let i=0; i < allDetails.length; i++) { %> 
+
+        <h2>  <%= allDetails[i].artName %>  </h2>
+          <p> <%= allDetails[i].address %> </p>   
+        <a href="<%= allDetails[i].link %>">Google Map Link</a> 
+        
+        <% } %></p></div>
     </div>
+        <a href="images/jamaicaPlain2.jpg"><img src="images/jamaicaPlain2.jpg"></a>
+        <button type="button">Info</button>
+        <a href="images/jamaicaPlain3.jpg"><img src="images/jamaicaPlain3.jpg"></a>
+        <button type="button">Info</button>
+        <a href="images/BreatheLifeRoxbury1.jpg"><img src="images/BreatheLifeRoxbury1.jpg"></a>
+        <button type="button"></button>
+        <a href="images/popCooper.jpg"><img src="images/popCooper.jpg"></a>
+        <a href="images/FacesOfRoxbury.jpg"><img src="images/FacesOfRoxbury.jpg"></a>
+        <a href="images/roxbury6.jpeg"><img src="images/roxbury6.jpeg"></a>
+        <a href="images/obamaPowerbox1.jpg"><img src="images/obamaPowerbox1.jpg"></a>
+        <a href="images/owlPowerbox2.jpeg"><img src="images/owlPowerbox2.jpeg"></a>
+        <a href="images/CeliaCruz2.jpeg"><img src="images/CeliaCruz2.jpeg"></a>
+        <a href="images/stonyBrookreservation.jpg"><img src="images/stonyBrookreservation.jpg"></a>
+        <a href="images/McDonough.jpg"><img src="images/McDonough.jpg"></a>
+        <a href="images/NelsonMandelaRoxbury.jpg"><img src="images/NelsonMandelaRoxbury.jpg"></a>
+        <a href="images/MelKingRoxbury2.jpg"><img src="images/MelKingRoxbury2.jpg"></a>
+        <a href="images/beePowerbox3.jpg"><img src="images/beePowerbox3.jpg"></a>
+        <a href="images/TheFrogmore.jpg"><img src="images/TheFrogmore.jpg"></a>
+        <a href="images/roxbury4.jpg"><img src="images/roxbury4.jpg"></a>
+        <a href="images/JacksonSquare.jpg"><img src="images/JacksonSquare.jpg"></a>
+        <a href="images/Unity.jpg"><img src="images/Unity.jpg"></a>
+
+
+    </div>
+</div>
 
 </body>
+<script src="/scripts.js"></script>
+
 </html>

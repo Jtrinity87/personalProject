@@ -1,0 +1,13 @@
+<%- include("../partials/head") %>
+<h1>A L L  D E T A I L S</h1>
+
+<div>
+
+     <% for(let i=0; i < allDetails.length; i++) { %> 
+
+        <h2>  <%= allDetails[i].artName %>  </h2>
+          <p> <%= allDetails[i].address %> </p>   
+        <a href="<%= allDetails[i].link %>">Google Map Link</a> 
+        
+        <% } %>
+</div>
