@@ -2,7 +2,7 @@ const express = require('express');
 const body_parser = require('body-parser');
 const mongodb = require('mongodb');
 const app = express();
-const PORT = 3003;
+const PORT = process.env.PORT || 3003;
 const path = require('path');
 const dotenv = require('dotenv').config();
 
