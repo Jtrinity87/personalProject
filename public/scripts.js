@@ -1,11 +1,19 @@
-let info = document.getElementById('btn');
-let content = document.getElementById('content');
+let btn_array = document.querySelectorAll('#btn');
 
-info.addEventListener('click', showInfo);
+for (let i=0; i < btn_array.length; i++) { 
+    btn_array[i].addEventListener('click', toggleInfo);
+}
 
-function showInfo(){
-content.style.display = "block";
-// console.log('Hey you');
+function toggleInfo(){
+    console.log(event);
+    console.log(event.target);
+    let content = event.target.nextElementSibling
+    console.log(content)
+    if (content.style.display === "block"){
+        content.style.display = "none";
+    } else{
+        content.style.display = "block";
+    }
 }
 
 // info.addEventListener('click', hideInfo);

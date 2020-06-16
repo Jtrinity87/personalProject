@@ -51,7 +51,8 @@
 
 
 .main-Container {
-    display: block;
+    display: flex;
+    justify-content: center;
     width: auto;
     height: auto;
 }
@@ -109,5 +110,4 @@ justify-content: center;
 
 #content {
     display: none;
-    /* display: block; */
 }
