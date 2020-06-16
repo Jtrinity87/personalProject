@@ -31,6 +31,7 @@ app.listen(PORT, () => {
         } else {
             console.log('connected to database');
             db_handler = db.db(DB_NAME);
+    
         }
     });
 
@@ -104,11 +105,10 @@ app.post('/createPage', (req, res) => {
         }
         else {
             console.log("One Entry Added");
-            res.render('/allDetails');
+            // res.render('/allDetails');
         }
     });
 });
-//this is wear i started the new database CONTACTS
 app.get('/contactPage', (req, res) => {
     console.log("user is here /contactPage")
     res.render('pages/contactPage');
@@ -139,16 +139,17 @@ app.post('/contactPage', (req, res) => {
         "Name": Name,
         "Email": Email,
         "QAC": QAC
-}});
-
-db_handler.collection(COLLECTION_CONTACTS).insertOne(my_contacts, (err, result) => {
+    }        
+    db_handler.collection(COLLECTION_CONTACTS).insertOne(my_contacts, (err, result) => {
     if (err) {
         console.log("Error: " + err);
     }
     else {
         console.log("One Entry Added");
-        res.render('/allDetails');
+        res.render('pages/confirmation');
+
     }
+})
 });
 
-// });
+
